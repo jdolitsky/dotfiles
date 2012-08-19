@@ -1,0 +1,12 @@
+[user]
+	name = Sarkis Varozian
+	email = svarozian@gmail.com
+
+[color]
+	ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+
+[core]
+	excludesfile = /Users/sarkis/.gitignore

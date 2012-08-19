@@ -1,0 +1,2 @@
+#!/bin/bash
+/Applications/VMware\ Fusion.app/Contents/Library/vmrun -T fusion start /Users/sarkis/Documents/Virtual\ Machines.localized/Ubuntu\ 64-bit.vmwarevm/Ubuntu\ 64-bit.vmx nogui
