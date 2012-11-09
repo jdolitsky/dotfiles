@@ -13,7 +13,7 @@ servers = (
     port = "6667";
     use_ssl = "no";
     ssl_verify = "no";
-    autoconnect = "yes";
+    autoconnect = "no";
   }
 );
 
@@ -89,7 +89,7 @@ channels = (
   { name = "#devops"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#vim"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#puppet"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#onelogin-sucks"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#/r/sysadmin"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#arpnetworks"; chatnet = "freenode"; autojoin = "yes"; }
 );
 
