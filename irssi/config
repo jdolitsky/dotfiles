@@ -9,11 +9,17 @@ servers = (
   },
   {
     address = "irc.oftc.net";
-    chatnet = "oftc";
+    chatnet = "OFTC";
     port = "6667";
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "no";
+  },
+  {
+    address = "bitlbee";
+    chatnet = "bitlbee";
+    port = "6667";
+    autoconnect = "yes";
   }
 );
 
@@ -81,16 +87,14 @@ chatnets = {
   };
   SILC = { type = "SILC"; };
   freenode = { type = "IRC"; };
+  bitlbee = { type = "IRC"; };
   perl = { type = "IRC"; };
   pgexperts = { type = "IRC"; };
 };
 
 channels = (
-  { name = "#devops"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#vim"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#puppet"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#/r/sysadmin"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#arpnetworks"; chatnet = "freenode"; autojoin = "yes"; }
+  { name = "#python"; chatnet = "freenode"; autojoin = "yes"; }
 );
 
 aliases = {
@@ -269,9 +273,8 @@ settings = {
     awl_display_key = "%w$N.$H$C$S";
     awl_maxlines = "1";
     neat_maxlength = "13";
-    nicklist_automode = "SCREEN";
   };
 };
 hilights = ( { text = "sako"; nick = "yes"; word = "yes"; } );
-ignores = ( { level = "JOINS PARTS QUITS"; } );
+ignores = ( { level = "JOINS PARTS QUITS MODES"; } );
 logs = { };

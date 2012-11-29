@@ -19,7 +19,7 @@ if [ -d ~/bin ]; then
 fi
 
 # path
-export PATH=:/usr/local/bin:/usr/local/share/python:$PATH
+export PATH=:/usr/local/bin:/usr/local/sbin:/usr/local/share/python:$PATH
 
 if [ -f `brew --prefix`/etc/bash_completion ]; then
 	. `brew --prefix`/etc/bash_completion
