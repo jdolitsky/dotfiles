@@ -23,13 +23,3 @@ source /usr/local/share/python/virtualenvwrapper_lazy.sh
 
 # misc
 shopt -s checkwinsize
-
-# irssi in tmux
-function tirssi() {
-    if [ -z $(pidof bitlbee) ]; then
-        bitlbee
-    fi
-    tmux rename-window irssi
-    tmux move-window -t :9
-    irssi
-}
