@@ -9,4 +9,4 @@
 	branch = auto
 
 [core]
-	excludesfile = /Users/sarkis/.gitignore
+	excludesfile = /Users/sarkis/.gitignore.global
