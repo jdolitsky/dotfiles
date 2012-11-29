@@ -266,7 +266,7 @@ statusbar = {
   };
 };
 settings = {
-  core = { real_name = "sako"; user_name = "sako"; nick = "sako"; };
+  core = { real_name = "sarkis"; user_name = "sarkis"; nick = "sarkis"; };
   "fe-text" = { actlist_sort = "refnum"; };
   "fe-common/core" = { theme = "xchat"; autolog = "yes"; };
   "perl/core/scripts" = {
@@ -275,6 +275,6 @@ settings = {
     neat_maxlength = "13";
   };
 };
-hilights = ( { text = "sako"; nick = "yes"; word = "yes"; } );
+hilights = ( { text = "sarkis"; nick = "yes"; word = "yes"; } );
 ignores = ( { level = "JOINS PARTS QUITS MODES"; } );
 logs = { };
