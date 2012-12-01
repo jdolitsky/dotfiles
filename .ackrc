@@ -1,0 +1,9 @@
+--sort-files
+--color
+--follow
+--type-add=ruby=haml,rake,ru
+--type-add=js=coffee
+--type-add=css=less
+--type-set=puppet=.pp
+--type-set=groovy=.groovy
+--type-set=vim=vim
