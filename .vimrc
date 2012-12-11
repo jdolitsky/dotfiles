@@ -10,16 +10,19 @@ set autowrite
 set backspace=indent,eol,start
 set hidden
 set encoding=utf-8
-set clipboard=unnamed
+if $TMUX == ''
+    set clipboard+=unnamed
+endif
 
 " Folding
-"silent! set foldcolumn=0
-"silent! set foldenable
-"silent! set foldlevel=10
+silent! set foldcolumn=0
+silent! set foldenable
+silent! set foldlevel=10
+silent! set foldmethod=syntax
 "silent! set foldmarker={{{,}}}
 "silent! set foldmethod=marker
-"silent! set foldopen-=search
-"silent! set foldopen-=undo
+silent! set foldopen-=search
+silent! set foldopen-=undo
 
 " GUI
 silent! set guifont=Monaco\ for\ Powerline:h12

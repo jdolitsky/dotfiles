@@ -9,7 +9,7 @@ if [[ $rc == 0 ]] ; then
         bitlbee
     fi
     tmux move-window -s work:1 -t work:2
-    tmux new-window -t work:1 -n 'vim' 'vim'
+    tmux new-window -t work:1 'vim'
     tmux new-window -t work:9 -n 'irssi' 'irssi'
 fi
 

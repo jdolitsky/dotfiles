@@ -18,7 +18,7 @@ call vundle#rc()
 
 " Bundles
 Bundle "mileszs/ack.vim"
-Bundle "kien/ctrlp.vim"
+"Bundle "kien/ctrlp.vim"
 Bundle "tpope/vim-endwise"
 Bundle "mattn/webapi-vim"
 Bundle "mattn/gist-vim"
@@ -67,11 +67,11 @@ let NERDSpaceDelims = 1
 map <leader>c <plug>NERDCommenterToggle
 
 " CtrlP settings
-let g:ctrlp_use_caching = 1
-let g:ctrlp_persistent_input = 0
-let g:ctrlp_cache_dir = $HOME . "/.vim/tmp"
-let g:ctrlp_working_path_mode = 2
-let g:ctrlp_clear_cache_on_exit = 0
+"let g:ctrlp_use_caching = 1
+"let g:ctrlp_persistent_input = 0
+"let g:ctrlp_cache_dir = $HOME . "/.vim/tmp"
+"let g:ctrlp_working_path_mode = 2
+"let g:ctrlp_clear_cache_on_exit = 0
 
 " Powerline 
 let g:Powerline_symbols = "fancy"
