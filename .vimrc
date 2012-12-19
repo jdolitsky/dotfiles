@@ -49,6 +49,7 @@ silent! set mouse=a
 
 " Display
 set display+=lastline
+set ttyfast
 set showcmd
 set showmode
 set showmatch

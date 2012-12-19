@@ -1,0 +1,6 @@
+#!/bin/bash
+# start bitlbee if not running
+if [ -z $(pidof bitlbee) ]; then
+    /usr/local/sbin/bitlbee
+fi
+/usr/local/bin/irssi
