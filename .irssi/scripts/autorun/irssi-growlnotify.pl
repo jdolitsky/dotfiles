@@ -42,7 +42,7 @@ sub priv_msg {
 sub hilight {
     my ($dest, $text, $stripped) = @_;
     if ($dest->{level} & MSGLEVEL_HILIGHT) {
-    filewrite($dest->{target}. " " .$stripped );
+        filewrite($dest->{target}. " " .$stripped );
     }
 }
 
@@ -57,9 +57,10 @@ sub filewrite {
     #    close (FILE);
     $text =~ s/\n/ /;
     $text =~ s/[<@&']//g;
+    $text = Irssi::strip_codes($text);
 
     my @values = split(' ', $text, 2);
-        system("growlnotify -t Irssi -n Irssi -m '$values[1]' '$values[0]'");
+    system("growlnotify -t Irssi -n Irssi -m '$values[1]' '$values[0]'");
 
 }
 
