@@ -31,4 +31,4 @@ if [ -f $HOME/.bashrc ]; then
 	source $HOME/.bashrc
 fi
 
-eval "$(rbenv init -)"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
