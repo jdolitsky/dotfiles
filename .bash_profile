@@ -14,7 +14,7 @@ export HISTCONTROL=ignoredups
 source $DOTBASH/colors.sh
 
 # path
-export PATH=:/usr/local/bin:/usr/local/sbin:/usr/local/share/python:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/python:$PATH
 
 # $HOME/bin
 if [ -d ~/bin ]; then
