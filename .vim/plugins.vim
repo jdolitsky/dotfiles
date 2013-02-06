@@ -53,8 +53,10 @@ Bundle "garbas/vim-snipmate"
 "let g:bufstat_prevent_mappings = 1
 
 " Gist settings
-let g:gist_private = 1
+let g:gist_show_private = 1
+let g:gist_post_private = 1
 let g:gist_detect_filetype = 1
+let g:gist_clip_command = 'pbcopy'
 
 " NERD Tree
 let NERDTreeIgnore=['\.pyc$','\~$']
