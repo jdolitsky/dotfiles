@@ -14,12 +14,6 @@ servers = (
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "no";
-  },
-  {
-    address = "bitlbee";
-    chatnet = "bitlbee";
-    port = "6667";
-    autoconnect = "yes";
   }
 );
 
@@ -87,7 +81,6 @@ chatnets = {
   };
   SILC = { type = "SILC"; };
   freenode = { type = "IRC"; };
-  bitlbee = { type = "IRC"; };
   perl = { type = "IRC"; };
   pgexperts = { type = "IRC"; };
 };
