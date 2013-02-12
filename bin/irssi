@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# start bitlbee if not running
+if [ -z $(pidof bitlbee) ]; then
+    /usr/local/sbin/bitlbee
+fi
+
+# change window name if in tmux
+if [[ $TMUX ]]; then 
+    /usr/local/bin/tmux rename-window irssi
+fi
+
+# start irssi
+/usr/local/bin/irssi
