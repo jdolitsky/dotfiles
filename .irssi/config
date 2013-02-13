@@ -93,6 +93,7 @@ chatnets = {
 };
 
 channels = (
+  { name = "#puppet"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#vim"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#python"; chatnet = "freenode"; autojoin = "yes"; }
 );
