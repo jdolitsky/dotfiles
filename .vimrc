@@ -55,6 +55,7 @@ set showmode
 set showmatch
 set novisualbell
 set number
+set relativenumber
 set ruler
 set wrap
 set laststatus=2
@@ -82,3 +83,14 @@ set t_Co=256
 set background=dark
 silent! colorscheme tir_black
 syntax on
+
+" Relative Number
+function! NumberToggle()
+    if(&relativenumber == 1)
+        set number
+    else
+        set relativenumber
+    endif
+endfunc
+
+nnoremap <C-n> :call NumberToggle()<cr>
