@@ -55,6 +55,9 @@ set showmode
 set showmatch
 set novisualbell
 set number
+set list
+set listchars=eol:¬ "tab:›\ ,trail:⋅
+set cursorline
 set relativenumber
 set ruler
 set wrap
