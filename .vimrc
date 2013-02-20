@@ -54,6 +54,7 @@ set showcmd
 set showmode
 set showmatch
 set novisualbell
+set noshowmode
 set number
 set list
 set listchars=tab:›\ ,eol:¬ "trail:⋅
@@ -86,6 +87,16 @@ set t_Co=256
 set background=dark
 silent! colorscheme tir_black
 syntax on
+
+" Fast Escape
+if ! has('gui_running')
+   set ttimeoutlen=10
+    augroup FastEscape
+        autocmd!
+        au InsertEnter * set timeoutlen=0
+        au InsertLeave * set timeoutlen=1000
+    augroup END
+endif
 
 " Relative Number
 function! NumberToggle()

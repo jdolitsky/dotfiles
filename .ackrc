@@ -1,9 +1,25 @@
 --sort-files
+
+# always color
 --color
+
 --follow
+
+# ruby
 --type-add=ruby=haml,rake,ru
+
+# coffee
 --type-add=js=coffee
+
+# less
 --type-add=css=less
+
+# puppet
 --type-set=puppet=.pp
---type-set=groovy=.groovy
+
+# vim
 --type-set=vim=vim
+
+# json
+--type-set=json=.json
+--type-add=js=.json
