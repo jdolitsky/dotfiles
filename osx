@@ -31,7 +31,7 @@ echo "Disable press-and-hold for keys in favor of key repeat"
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 echo "Set a blazingly fast keyboard repeat rate"
-defaults write NSGlobalDomain KeyRepeat -int 0.02
+defaults write NSGlobalDomain KeyRepeat -int 0
 
 echo "Set a shorter Delay until key repeat"
 defaults write NSGlobalDomain InitialKeyRepeat -int 12
@@ -91,10 +91,10 @@ chflags nohidden ~/Library
 #echo "Disable local Time Machine backups"
 #hash tmutil &> /dev/null && sudo tmutil disablelocal
 
-echo "Remove Dropbox’s green checkmark icons in Finder"
-file=/Applications/Dropbox.app/Contents/Resources/check.icns
-[ -e "$file" ] && mv -f "$file" "$file.bak"
-unset file
+#echo "Remove Dropbox’s green checkmark icons in Finder"
+#file=/Applications/Dropbox.app/Contents/Resources/check.icns
+#[ -e "$file" ] && mv -f "$file" "$file.bak"
+#unset file
 
 #Fix for the ancient UTF-8 bug in QuickLook (http://mths.be/bbo)
 ## Commented out, as this is known to cause problems when saving files in Adobe Illustrator CS5 :(

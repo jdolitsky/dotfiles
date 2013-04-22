@@ -13,6 +13,7 @@ set encoding=utf-8
 if $TMUX == ''
     set clipboard+=unnamed
 endif
+let mapleader = ","
 
 " Folding
 silent! set foldcolumn=0
@@ -59,7 +60,7 @@ set number
 set list
 set listchars=tab:›\ ,eol:¬ "trail:⋅
 set cursorline
-set relativenumber
+"set relativenumber
 set ruler
 set wrap
 set laststatus=2
@@ -81,6 +82,13 @@ set smartcase
 
 " Supporting files
 silent! runtime plugins.vim
+
+" Window management
+" Maps Alt-[arrow keys] to resizing a window split
+map <silent> OD <C-w><
+map <silent> OB <C-W>-
+map <silent> OA <C-W>+
+map <silent> OC <C-w>>
 
 " Colors
 set t_Co=256

@@ -38,10 +38,11 @@ Bundle "tir_black"
 Bundle "Lokaltog/vim-powerline"
 Bundle "sarkis/vim-puppet"
 Bundle "tpope/vim-repeat"
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "snipmate-snippets"
-Bundle "garbas/vim-snipmate"
+" snipmate
+"Bundle "MarcWeber/vim-addon-mw-utils"
+"Bundle "tomtom/tlib_vim"
+"Bundle "snipmate-snippets"
+"Bundle "garbas/vim-snipmate"
 
 " Plugin specific settings
 " Bufstat settings
@@ -60,7 +61,7 @@ let g:gist_clip_command = 'pbcopy'
 
 " NERD Tree
 let NERDTreeIgnore=['\.pyc$','\~$']
-map <LocalLeader>n :execute 'NERDTreeToggle'<cr>
+map <leader>n :execute 'NERDTreeToggle'<cr>
 
 " NERD Commenter settings
 let NERDCreateDefaultMappings = 0
