@@ -6,6 +6,7 @@ servers = (
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "yes";
+    password = "";
   },
   {
     address = "irc.oftc.net";
@@ -16,10 +17,11 @@ servers = (
     autoconnect = "no";
   },
   {
-    address = "bitlbee";
+    address = "localhost";
     chatnet = "bitlbee";
     port = "6667";
     autoconnect = "yes";
+    password = "";
   }
 );
 

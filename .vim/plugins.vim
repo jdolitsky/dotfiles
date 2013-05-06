@@ -18,7 +18,6 @@ call vundle#rc()
 
 " Bundles
 Bundle "mileszs/ack.vim"
-"Bundle "kien/ctrlp.vim"
 Bundle "tpope/vim-endwise"
 Bundle "mattn/webapi-vim"
 Bundle "mattn/gist-vim"
@@ -38,6 +37,7 @@ Bundle "tir_black"
 Bundle "Lokaltog/vim-powerline"
 Bundle "sarkis/vim-puppet"
 Bundle "tpope/vim-repeat"
+"Bundle "kien/ctrlp.vim"
 " snipmate
 "Bundle "MarcWeber/vim-addon-mw-utils"
 "Bundle "tomtom/tlib_vim"
