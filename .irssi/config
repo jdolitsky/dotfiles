@@ -2,17 +2,17 @@ servers = (
   {
     address = "irc.freenode.net";
     chatnet = "freenode";
-    port = "6667";
-    use_ssl = "no";
-    ssl_verify = "no";
+    port = "6697";
+    use_ssl = "yes";
+    ssl_verify = "yes";
     autoconnect = "yes";
   },
   {
     address = "irc.oftc.net";
     chatnet = "OFTC";
-    port = "6667";
-    use_ssl = "no";
-    ssl_verify = "no";
+    port = "6697";
+    use_ssl = "yes";
+    ssl_verify = "yes";
     autoconnect = "no";
   },
   {
