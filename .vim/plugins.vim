@@ -77,6 +77,6 @@ map <leader>c <plug>NERDCommenterToggle
 "let g:ctrlp_clear_cache_on_exit = 0
 
 " Powerline 
-let g:Powerline_symbols = "fancy"
+let g:Powerline_symbols = 'fancy'
 
 filetype plugin indent on
