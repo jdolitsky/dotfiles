@@ -14,12 +14,6 @@ servers = (
     use_ssl = "yes";
     ssl_verify = "yes";
     autoconnect = "no";
-  },
-  {
-    address = "localhost";
-    chatnet = "bitlbee";
-    port = "6667";
-    autoconnect = "yes";
   }
 );
 
