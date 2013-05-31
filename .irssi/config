@@ -87,9 +87,10 @@ chatnets = {
 };
 
 channels = (
+  { name = "#salt"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#puppet"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#vim"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#python"; chatnet = "freenode"; autojoin = "yes"; }
+  { name = "#python"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#vim"; chatnet = "freenode"; autojoin = "yes"; }
 );
 
 aliases = {
