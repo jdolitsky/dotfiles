@@ -14,14 +14,6 @@ servers = (
     use_ssl = "yes";
     ssl_verify = "yes";
     autoconnect = "no";
-  },
-  {
-    address = "localhost";
-    chatnet = "bitlbee";
-    port = "6667";
-    use_ssl = "no";
-    ssl_verify = "no";
-    autoconnect = "yes";
   }
 );
 
@@ -95,8 +87,8 @@ chatnets = {
 };
 
 channels = (
-  { name = "#salt"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#puppet"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#ruby"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#python"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#vim"; chatnet = "freenode"; autojoin = "yes"; }
 );
