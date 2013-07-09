@@ -27,7 +27,7 @@ PS1='\[$_green\][\u@\h \[$_cyan\]\w$(__git_ps1)\[$_green\]]\[${_ret_cols[!$_ret]
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/projects
 export VIRTUALENV_DISTRIBUTE=1
-source /usr/local/share/python/virtualenvwrapper_lazy.sh
+source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 # alias
 alias ls='ls -G'
