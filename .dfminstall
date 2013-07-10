@@ -2,5 +2,7 @@ README.md skip
 colors skip
 fonts skip
 .osx skip
-.ssh recurse
 .gitignore skip
+.ipython skip
+.ipython/profile_default recurse
+.ssh recurse
