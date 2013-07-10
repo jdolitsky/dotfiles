@@ -1,5 +1,6 @@
 README.md skip
 colors skip
 fonts skip
-osx skip
+.osx skip
 .ssh recurse
+.gitignore skip
