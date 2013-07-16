@@ -7,7 +7,7 @@ export EDITOR='vim'
 #export EC2_HOME="/usr/local/Library/LinkedKegs/ec2-api-tools/jars"
 
 # path
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/python:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # $HOME/bin
 if [ -d ~/bin ]; then
