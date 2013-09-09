@@ -31,6 +31,7 @@ Bundle "tir_black"
 Bundle "Lokaltog/vim-powerline"
 Bundle "rodjek/vim-puppet"
 Bundle "tpope/vim-repeat"
+Bundle "altercation/vim-colors-solarized"
 
 " Gist settings
 let g:gist_show_private = 1
