@@ -93,8 +93,7 @@ map <silent> OC <C-w>>
 " Colors
 set t_Co=256
 syntax on
-set background=dark
-silent! colorscheme tir_black
+silent! colorscheme jellybeans
 
 " Fast Escape
 if ! has('gui_running')
