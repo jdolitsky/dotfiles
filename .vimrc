@@ -85,15 +85,15 @@ silent! runtime plugins.vim
 
 " Window management
 " Maps Alt-[arrow keys] to resizing a window split
-map <silent> OD <C-w><
-map <silent> OB <C-W>-
-map <silent> OA <C-W>+
-map <silent> OC <C-w>>
+" map <silent> OD <C-w><
+" map <silent> OB <C-W>-
+" map <silent> OA <C-W>+
+" map <silent> OC <C-w>>
 
 " Colors
 set t_Co=256
 syntax on
-silent! colorscheme jellybeans
+silent! colorscheme tir_black
 
 " Fast Escape
 if ! has('gui_running')

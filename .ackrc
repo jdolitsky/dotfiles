@@ -6,7 +6,7 @@
 --follow
 
 # ruby
---type-add=ruby=haml,rake,ru
+--type-add=ruby=haml,rake,ru,erb
 
 # coffee
 --type-add=js=coffee
