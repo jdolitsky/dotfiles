@@ -21,7 +21,7 @@ Bundle "mileszs/ack.vim"
 Bundle "tpope/vim-fugitive"
 Bundle "scrooloose/nerdtree"
 Bundle "gmarik/vundle"
-Bundle "tir_black"
+Bundle "sarkis/tir_black"
 Bundle "Lokaltog/vim-powerline"
 Bundle "rodjek/vim-puppet"
 
