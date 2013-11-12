@@ -1,23 +1,18 @@
 export EDITOR='vim'
 
-# ec2-api-tools
-#export JAVA_HOME="$(/usr/libexec/java_home)"
-#export EC2_PRIVATE_KEY="$(/bin/ls "$HOME"/.ec2/pk-*.pem | /usr/bin/head -1)"
-#export EC2_CERT="$(/bin/ls "$HOME"/.ec2/cert-*.pem | /usr/bin/head -1)"
-#export EC2_HOME="/usr/local/Library/LinkedKegs/ec2-api-tools/jars"
-
-# path
-#export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-
 # $HOME/bin
 if [ -d ~/bin ]; then
     export PATH=:$HOME/bin:$PATH  # add your bin folder to the path, if you have it.  It's a good place to add all your scripts
 fi
 
-# only on osx
-source ~/.bash_completion.d/git-prompt.sh
+if [[ "$OSTYPE" =~ ^darwin ]]; then
+    # osx specific
+    source ~/.bash_completion.d/git-prompt.sh
+else
+    # linux specific
+    source /usr/share/git/completion/git-prompt.sh
+    eval "$(rbenv init -)"
+fi
 
 # load bashrc
-if [ -f $HOME/.bashrc ]; then
-    source $HOME/.bashrc
-fi
+[[ -f ~/.bashrc ]] && . ~/.bashrc

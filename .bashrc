@@ -1,3 +1,16 @@
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+if [[ "$OSTYPE" =~ ^darwin ]]; then
+    # osx specific
+    alias ls='ls -G'
+    #alias ssh='TERM=xterm-256color ssh'
+else
+    # linux specific
+    alias ls='ls --color=auto'
+    alias ssh='eval $(/usr/bin/keychain --eval --agents ssh -Q --quiet /home/svarozian/.ssh/id_rsa) && ssh'
+fi
+
 # set colors
 _i=0
 for _c in _black _red _green _yellow _blue _magenta _cyan _white; do
@@ -22,17 +35,6 @@ shopt -s histappend
 
 # prompt
 PS1='\[$_green\][\u@\h \[$_cyan\]\w$(__git_ps1)\[$_green\]]\[${_ret_cols[!$_ret]}\]$\[$_reset\] '
-
-# virtualenvwrapper
-#export WORKON_HOME=$HOME/.virtualenvs
-#export PROJECT_HOME=$HOME/projects
-#export VIRTUALENV_DISTRIBUTE=1
-#source /usr/local/bin/virtualenvwrapper_lazy.sh
-
-# alias
-#alias ls='ls -G'
-#alias ssh='TERM=xterm-256color ssh'
-
 
 # misc
 shopt -s checkwinsize
