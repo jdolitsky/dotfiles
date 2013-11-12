@@ -3,6 +3,4 @@ colors skip
 fonts skip
 .osx skip
 .gitignore skip
-.ipython skip
-.ipython/profile_default recurse
-.ssh recurse
+.ssh skip

@@ -20,12 +20,10 @@ call vundle#rc()
 Bundle "mileszs/ack.vim"
 Bundle "tpope/vim-fugitive"
 Bundle "scrooloose/nerdtree"
-Bundle "tpope/vim-surround"
 Bundle "gmarik/vundle"
 Bundle "tir_black"
 Bundle "Lokaltog/vim-powerline"
 Bundle "rodjek/vim-puppet"
-Bundle "tpope/vim-repeat"
 
 " Gist settings
 "let g:gist_show_private = 1
@@ -44,6 +42,6 @@ map <leader>n :execute 'NERDTreeToggle'<cr>
 "map <leader>c <plug>NERDCommenterToggle
 
 " Powerline 
-let g:Powerline_symbols = 'fancy'
+"let g:Powerline_symbols = 'fancy'
 
 filetype plugin indent on

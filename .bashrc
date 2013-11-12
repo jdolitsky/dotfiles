@@ -24,14 +24,14 @@ shopt -s histappend
 PS1='\[$_green\][\u@\h \[$_cyan\]\w$(__git_ps1)\[$_green\]]\[${_ret_cols[!$_ret]}\]$\[$_reset\] '
 
 # virtualenvwrapper
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/projects
-export VIRTUALENV_DISTRIBUTE=1
-source /usr/local/bin/virtualenvwrapper_lazy.sh
+#export WORKON_HOME=$HOME/.virtualenvs
+#export PROJECT_HOME=$HOME/projects
+#export VIRTUALENV_DISTRIBUTE=1
+#source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 # alias
-alias ls='ls -G'
-alias ssh='TERM=xterm-256color ssh'
+#alias ls='ls -G'
+#alias ssh='TERM=xterm-256color ssh'
 
 
 # misc
