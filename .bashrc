@@ -8,7 +8,9 @@ if [[ "$OSTYPE" =~ ^darwin ]]; then
 else
     # linux specific
     alias ls='ls --color=auto'
-    alias ssh='eval $(/usr/bin/keychain --eval --agents ssh -Q --quiet /home/svarozian/.ssh/id_rsa) && ssh'
+    alias cb='xclip -selection clipboard'
+    envoy -t ssh-agent
+    source <(envoy -p)
 fi
 
 # set colors
