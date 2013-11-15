@@ -11,7 +11,7 @@ if [[ "$OSTYPE" =~ ^darwin ]]; then
 else
     # linux specific
     source /usr/share/git/completion/git-prompt.sh
-    eval "$(rbenv init -)"
+    #eval "$(rbenv init -)"
 fi
 
 # load bashrc
