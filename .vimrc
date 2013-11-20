@@ -118,7 +118,7 @@ nnoremap <C-n> :call NumberToggle()<cr>
 
 " pbcopy/pbpaste
 function! PropagatePasteBufferToOSX()
-  let @n=getreg("*")
+  let @n=getreg('"')
   call system('pbcopy-remote', @n)
   echo "done"
 endfunction
