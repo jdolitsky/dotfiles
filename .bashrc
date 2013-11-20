@@ -7,7 +7,6 @@ if [[ "$OSTYPE" =~ ^darwin ]]; then
 else
     # linux specific
     alias ls='ls --color=auto'
-    alias cb='xclip -selection clipboard'
 
     envoy -t ssh-agent
     source <(envoy -p)
@@ -45,4 +44,5 @@ PS1='\[$_green\][\u@\h \[$_cyan\]\w$(__git_ps1)\[$_green\]]\[${_ret_cols[!$_ret]
 # misc
 shopt -s checkwinsize
 
+# mt stuff
 dev_load() { for i in $(seq 1 7); do ssh dev0${i}.mtsvc.net "uptime" | echo "dev0${i}: $(awk -F, '{ print $4, $5, $6 }')"; done }
