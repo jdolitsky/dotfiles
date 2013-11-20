@@ -4,7 +4,6 @@
 if [[ "$OSTYPE" =~ ^darwin ]]; then
     # osx specific
     alias ls='ls -G'
-    #alias ssh='TERM=xterm-256color ssh'
 else
     # linux specific
     alias ls='ls --color=auto'
