@@ -7,6 +7,7 @@ fi
 
 if [[ "$OSTYPE" =~ ^darwin ]]; then
     # osx specific
+    source ~/.bash_completion.d/git-completion.bash
     source ~/.bash_completion.d/git-prompt.sh
 else
     # linux specific
