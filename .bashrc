@@ -9,8 +9,13 @@ else
     # linux specific
     alias ls='ls --color=auto'
     alias cb='xclip -selection clipboard'
-    #envoy -t ssh-agent
-    #source <(envoy -p)
+
+    envoy -t ssh-agent
+    source <(envoy -p)
+
+    VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+    export WORKON_HOME=~/.virtualenvs
+    source /usr/bin/virtualenvwrapper.sh
 fi
 
 # set colors
