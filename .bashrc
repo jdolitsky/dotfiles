@@ -16,6 +16,10 @@ else
     source /usr/bin/virtualenvwrapper.sh
 fi
 
+# alias
+alias tree='tree -C'
+alias less='less -r'
+
 # set colors
 _i=0
 for _c in _black _red _green _yellow _blue _magenta _cyan _white; do
